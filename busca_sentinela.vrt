@@ -1,0 +1,55 @@
+inteiro x[4];
+inteiro v[8];
+constante inteiro m = 8; 
+
+funcao inteiro principal() 
+{
+
+inteiro i, j;
+
+x[0] = 19;
+x[1] = 45;
+x[2] = 8;
+x[3] = 81;
+
+
+v[0] = 45;
+v[1] = 56;
+v[2] = 12;
+v[3] = 43;
+v[4] = 95;
+v[5] = 19;
+v[6] = 8;
+v[7] = 67;
+
+
+para j = 0 ate 3 {
+
+i = 0;
+
+v[m] = x[j];
+
+enquanto (v[i] != x[j]){
+   i = i + 1;
+}
+
+se (i==m) entao {
+   escreva("Busca de ");
+   escreva(x[j]);
+   escreva(" = -1");
+}
+
+se (i!= m) entao {
+     escreva("Busca de ");
+     escreva(x[j]);
+     escreva(" = ");
+     escreva(i); 
+}
+
+}
+
+
+retorne 0;
+
+}
+
